@@ -1,0 +1,38 @@
+.rocket{
+    animation: item-stay-move 2s infinite ease-in-out;
+}
+
+.cody{
+    animation: item-stay-move 2s infinite ease-in-out,
+               move-cody 2s 6s ease-in-out forwards;
+}
+
+body{
+    animation: background-move 6s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes move-cody{
+    0%{
+        left: -15%;
+    }
+    100%{
+        left: 15%;
+    }
+}
+
+@keyframes background-move{
+    0%{
+        background-position: 100px 10%;
+    }
+    100%{
+        background-position: -5000px 10%;
+    }
+}
+
+@keyframes item-stay-move{
+    50%{
+        transform: translateY(-20px);
+    }
+}
