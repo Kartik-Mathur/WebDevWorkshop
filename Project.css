@@ -17,3 +17,23 @@ body{
     left: -15%;
 }
 
+
+.conv1,
+.conv3{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 420px;
+    left: 460px;
+    opacity: 0;
+}
+
+.conv2,
+.conv4{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 540px;
+    left: 760px;    
+    opacity: 0;
+}

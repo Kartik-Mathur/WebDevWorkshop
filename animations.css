@@ -1,10 +1,12 @@
 .rocket{
-    animation: item-stay-move 2s infinite ease-in-out;
+    animation: item-stay-move 2s infinite ease-in-out,
+                rocket-tocb 2s 19s ease-in-out forwards;
 }
 
 .cody{
     animation: item-stay-move 2s infinite ease-in-out,
-               move-cody 2s 6s ease-in-out forwards;
+               move-cody 2s 6s ease-in-out forwards,
+               cody-onboards 2s 17s ease-in-out forwards;
 }
 
 body{
@@ -12,6 +14,54 @@ body{
     animation-fill-mode: forwards;
 }
 
+.conv1{
+    animation: conversation 2s 8s ease-in-out,
+               item-stay-move 2s infinite ease-in-out;
+}
+
+.conv2{
+    animation: conversation 2s 10s ease-in-out,
+               item-stay-move 2s infinite ease-in-out;
+}
+
+.conv3{
+    animation: conversation 2s 12s ease-in-out,
+               item-stay-move 2s infinite ease-in-out;
+}
+
+.conv4{
+    animation: conversation 2s 14s ease-in-out,
+    item-stay-move 2s infinite ease-in-out;
+}
+
+@keyframes cody-onboards{
+    0%{
+        left: 15%;
+    }
+    100%{
+        left: 25%;
+        opacity: 0;
+    }
+}
+
+@keyframes rocket-tocb{
+    20%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        top: -1000px;
+    }
+}
+
+@keyframes conversation{
+    40%,
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 @keyframes move-cody{
     0%{
