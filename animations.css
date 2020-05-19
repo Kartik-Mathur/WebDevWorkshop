@@ -1,6 +1,9 @@
 .rocket{
-    animation: item-stay-move 2s infinite ease-in-out,
-                rocket-tocb 2s 19s ease-in-out forwards;
+    animation: item-stay-move 2s infinite ease-in-out;
+}
+
+.r1{
+    animation :rocket-tocb 2s 19s ease-in-out forwards;
 }
 
 .cody{
@@ -46,10 +49,10 @@ body{
 
 @keyframes rocket-tocb{
     20%{
-        transform: rotate(-90deg);
+        transform: rotateZ(-45deg);
     }
     100%{
-        top: -1000px;
+       top: -1000px;
     }
 }
 
